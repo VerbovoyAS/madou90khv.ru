@@ -1,0 +1,68 @@
+#main-nav-menu a {
+    text-transform: uppercase;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: var(--main-color);!important;
+    background-color: var(--main-color-bg)!important;
+}
+
+
+#main-nav-menu ul {
+    margin: 0;
+}
+
+/* Убирает возможность фиксированного меню. Пока не понятно как хочет клиент */
+#main-nav-menu.fixed-top {
+    position: absolute;!important;
+}
+
+.bg-dark {
+    transition: 0.6s;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--main-color)!important;
+    transition: 0.6s;
+    margin: 0 15px;
+}
+
+@media screen and (max-width: 768px)  {
+     /* Фон для мобильного меню пока оно прозрачное */
+    #main-menu ul {
+        background-color: var(--main-color);
+        border-radius: 0.5em;
+    }
+
+    .navbar-dark .navbar-brand,
+    .navbar-dark .navbar-nav .nav-link {
+        color: white!important;
+    }
+
+    #main-nav-menu a {
+        color: white;!important;
+    }
+}
+
+.h-menu-style li {
+    position: relative;
+}
+
+.h-menu-style li a:not(.dropdown-toggle, .dropdown-item):after{
+    content: url("../img/site/h-list-style-2-new.svg");
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 40%;
+    top: 80px;
+    opacity: 0%; 
+    transition: all 1.5s; 
+}
+
+.h-menu-style li a:hover::after{
+    top: 35px;
+    opacity: 100%;  
+}
