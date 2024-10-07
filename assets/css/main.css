@@ -189,7 +189,7 @@ header object svg {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../img/site/madou90-main-1.svg') !important;
+    background-image: url('../img/site/madou90-main.svg') !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
