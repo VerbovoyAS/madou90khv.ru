@@ -171,7 +171,7 @@ get_header();
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col shadow mb-2 p-3 bg-body rounded-3">
+                    <div class="widget col shadow mb-2 p-3 bg-body rounded-3">
                         <h3 class="text-center text-secondary">Свежие записи</h3>
 
                         <?php

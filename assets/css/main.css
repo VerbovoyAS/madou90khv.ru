@@ -12,6 +12,7 @@ src: url("../fonts/kzcooper.ttf") format("truetype");
     --main-color-bg: #97e4ff;
     --bs-link-color: #1b6aac;
     --bs-link-hover-color: #60aeef;
+    --main-menu-font-family: "kzcooper";
 }
 
 .accordion {
@@ -54,8 +55,7 @@ hr {
 
 body {
     background-color: #f2f2f2 !important;
-    /*font-family: "Roboto", sans-serif !important;*/
-    font-family: "kzcooper", sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
 }
 
 header object {
@@ -158,6 +158,14 @@ header object svg {
     width: 50vw;
 }
 
+.widget {
+    font-family: var(--main-menu-font-family), sans-serif !important;
+}
+
+.h-breadcrumb {
+    font-family: var(--main-menu-font-family), sans-serif !important;
+}
+
 /*.widget-title {*/
 /*    font-size: 1.75rem;*/
 /*    text-align: center;*/
@@ -174,6 +182,7 @@ header object svg {
     background-size: cover;
     min-height: 300px;
     max-height: 350px;
+    font-family: var(--main-menu-font-family), sans-serif !important;
 }
 
 .card-custom-img h1 {
@@ -273,7 +282,7 @@ header object svg {
     position: relative;
     top: 48vh;
     margin: 0 auto;
-    font-family: "kzcooper", sans-serif !important;
+    font-family: var(--main-menu-font-family), sans-serif !important;
     font-size: 4em !important;
 }
 
@@ -287,7 +296,7 @@ header object svg {
     position: relative;
     top: 70vh;
     margin: 0 auto;
-    font-family: "kzcooper", sans-serif !important;
+    font-family: var(--main-menu-font-family), sans-serif !important;
     font-size: 8em !important;
 }
 

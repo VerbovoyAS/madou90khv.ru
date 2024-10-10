@@ -2,6 +2,7 @@
     --bs-navbar-color: var(--main-color) !important;
     --bs-navbar-hover-color: var(--bs-link-color)!important;
     --bs-navbar-active-color: var(--bs-link-color)!important;
+    font-family: var(--main-menu-font-family), sans-serif !important;
 }
 
 #main-nav-menu a {
@@ -57,18 +58,18 @@
 }
 
 .h-menu-style li a:not(.dropdown-toggle, .dropdown-item):after{
-    content: url("../img/site/h-list-style-2-new.svg");
+    content: var(--h-list-style-img-2);
     display: block;
     width: 20px;
     height: 20px;
     position: absolute;
     left: 40%;
     top: 80px;
-    opacity: 0%; 
-    transition: all 1.5s; 
+    opacity: 0%;
+    transition: all 1.5s;
 }
 
 .h-menu-style li a:hover::after{
     top: 35px;
-    opacity: 100%;  
+    opacity: 100%;
 }

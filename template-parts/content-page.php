@@ -24,7 +24,7 @@ use HashtagCore\Hashtag;
 
 <div class="container-lg">
     <div class="row pb-2 px-2 px-lg-0">
-        <div class="col-12 text-muted">
+        <div class="h-breadcrumb col-12 text-muted">
             <!-- Breadcrumbs -->
             <?php Hashtag::breadcrumbs(); ?>
             <!-- /breadcrumb -->
@@ -61,7 +61,7 @@ use HashtagCore\Hashtag;
                 </div>
             </div>
             <div class="row">
-                <div class="col shadow mb-2 p-3 bg-body rounded-3">
+                <div class="widget col shadow mb-2 p-3 bg-body rounded-3">
                     <h3 class="text-center">Свежие записи</h3>
 
                     <?php

@@ -138,7 +138,7 @@ use HashtagCore\Hashtag;
 
             <div class="col-12 col-lg-4">
                 <div class="row">
-                    <div class="col shadow mb-2 p-3 bg-body rounded-3">
+                    <div class="widget col shadow mb-2 p-3 bg-body rounded-3">
                         <h3 class="text-center">Свежие записи</h3>
 
                         <?php
