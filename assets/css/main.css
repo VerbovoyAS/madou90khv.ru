@@ -37,6 +37,10 @@ hr {
     background-size: auto !important;
 }
 
+.alert h4 {
+    font-family: var(--main-menu-font-family), sans-serif !important;
+}
+
 .alert-info {
     --bs-alert-color: var(--main-color) !important;
     --bs-alert-bg: var(--main-color-bg);
