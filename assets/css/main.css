@@ -10,8 +10,8 @@ src: url("../fonts/kzcooper.ttf") format("truetype");
 :root {
     --main-color: #004456;
     --main-color-bg: #97e4ff;
-    --bs-link-color: #60aeef;
-    --bs-link-hover-color: #1b6aac;
+    --bs-link-color: #1b6aac;
+    --bs-link-hover-color: #60aeef;
 }
 
 .accordion {
@@ -170,7 +170,7 @@ header object svg {
 /*}*/
 
 .card-custom-img {
-    background-image: url("../img/site/bg-new.svg");
+    background-image: url("../img/site/bg.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -345,11 +345,13 @@ header object svg {
     }
 
     .card-custom-img {
-        background-position: left center;
         min-height: 250px;
         max-height: 300px;
     }
 
+    .card-custom-img h1 {
+        font-size: 2.5em !important;
+    }
 }
 
 @media (max-width: 430px) {

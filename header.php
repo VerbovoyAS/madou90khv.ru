@@ -32,7 +32,7 @@ if (is_archive()) {
 
 <body>
 <header>
-    <nav id="main-nav-menu" class="navbar navbar-expand-md navbar-dark fixed-top ">
+    <nav id="main-nav-menu" class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid container-lg">
             <a class="navbar-brand d-lg-block d-none" href="/">
                 <img src="<?= wp_get_original_image_url(carbon_get_theme_option(SITE_LOGO))?>" alt="" width="<?= carbon_get_theme_option(SITE_LOGO_WIDTH)?>" height="<?= carbon_get_theme_option(SITE_LOGO_HEIGHT)?>">
