@@ -178,6 +178,10 @@ header object svg {
     max-height: 350px;
 }
 
+.card-custom-img h1 {
+    max-width: 900px !important;
+}
+
 /*для красивых карточек*/
 .card-cover {
     background-repeat: no-repeat;
