@@ -17,7 +17,7 @@
         </ul>
     </div>
 
-    <section class="main-content container">
+    <section class="main-content container pt-2">
         <?php the_content();?>
     </section>
 
