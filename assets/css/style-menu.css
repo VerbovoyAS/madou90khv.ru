@@ -46,6 +46,7 @@
 
     #main-nav-menu {
         --bs-navbar-color: white !important;
+        --bs-navbar-hover-color: var(--bs-link-hover-color) !important;
         --bs-navbar-active-color: var(--bs-link-hover-color) !important;
     }
 
@@ -53,6 +54,7 @@
         --bs-dropdown-link-color: white !important;
         --bs-dropdown-link-active-color: var(--bs-link-hover-color) !important;
         --bs-dropdown-link-active-bg: var(--main-color) !important;
+        --bs-dropdown-link-hover-color: var(--bs-link-hover-color);
         --bs-dropdown-link-hover-bg: var(--main-color);
     }
 }
