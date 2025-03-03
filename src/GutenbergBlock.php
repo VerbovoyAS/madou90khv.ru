@@ -794,7 +794,7 @@ final class GutenbergBlock
                                         <?php if($year_advanced_training):?>
                                         <tr>
                                             <th scope="row"  class="p-1" style="width: 35%;">Год повышения квалификации:</th>
-                                            <td class="p-1"><?= (new DateTime($year_advanced_training))->format('Y'); ?></td>
+                                            <td class="p-1"><?= (new DateTime($year_advanced_training))->format('Y') ?: ' '; ?></td>
                                         </tr>
                                         <?php endif;?>
                                         <tr>
