@@ -900,7 +900,7 @@ final class GutenbergBlock
                     $offset= (($key + 1 === $countPosts) && $isNotEven && $rowColsFlag)  ? 'offset-md-3' : '';
                     ?>
                     <a class="text-decoration-none link-secondary h4 <?= $offset; ?>" href="<?= get_permalink($postId);?>">
-                        <div class="d-flex align-items-center rounded-3 shadow mb-2 p-3 bg-body h-100">
+                        <div class="d-flex align-items-center justify-content-center rounded-3 shadow mb-2 p-3 bg-body h-100">
                             <i class="<?= $icon; ?> px-4" style="font-size: 1.75rem;"></i>
 <!--                            <h4 class="fw-bold mb-0">--><?php //= $post->post_title;?><!--</h4>-->
                             <?= $card['alt_name'] ?: $post->post_title;?>
