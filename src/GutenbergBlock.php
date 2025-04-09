@@ -760,7 +760,7 @@ final class GutenbergBlock
 <!--                                        --><?php //if($positions_staffs_top == ''):?>
                                         <tr>
                                             <th scope="row"  class="p-1" style="width: 35%;">Телефон:</th>
-                                            <td class="p-1 text-600"><?= $phone ?: carbon_get_theme_option(DEFAULT_PHONE); echo $positions_staffs_top->name ?: 'error get_terms_by_tax' ?></td>
+                                            <td class="p-1 text-600"><?= $phone ?: carbon_get_theme_option(DEFAULT_PHONE); echo $positions_staffs_top->slug ?: 'error get_terms_by_tax' ?></td>
                                         </tr>
 <!--                                        --><?php //endif;?>
                                         <?php if($working_hours):?>
