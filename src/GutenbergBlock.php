@@ -757,12 +757,12 @@ final class GutenbergBlock
                                             <th scope="row" class="p-1" style="width: 35%;">Email:</th>
                                             <td class="p-1 text-600"><?= $mail ?: carbon_get_theme_option(DEFAULT_EMAIL);?></td>
                                         </tr>
-<!--                                        --><?php //if($positions_staffs_top == ''):?>
+                                        <?php if($positions_staffs_top->slug == 'rukovodstvo'):?>
                                         <tr>
                                             <th scope="row"  class="p-1" style="width: 35%;">Телефон:</th>
-                                            <td class="p-1 text-600"><?= $phone ?: carbon_get_theme_option(DEFAULT_PHONE); echo $positions_staffs_top->slug ?: 'error get_terms_by_tax' ?></td>
+                                            <td class="p-1 text-600"><?= $phone ?: carbon_get_theme_option(DEFAULT_PHONE);?></td>
                                         </tr>
-<!--                                        --><?php //endif;?>
+                                        <?php endif;?>
                                         <?php if($working_hours):?>
                                         <tr>
                                             <th scope="row"  class="p-1" style="width: 35%;">Время работы (приёма):</th>
