@@ -693,6 +693,7 @@ final class GutenbergBlock
 
                     //  Получаем terms таксонов
                     $positions_staffs = Staffs::get_terms_by_tax(get_the_ID(), 'positions_staffs');
+                    $positions_staffs_top = Staffs::get_top_term(get_the_ID(), 'positions_staffs');
                     $taxonomy_education = Staffs::get_terms_by_tax(get_the_ID(), 'taxonomy_education');
                     $taxonomy_education_category = Staffs::get_terms_by_tax(get_the_ID(), 'taxonomy_education_category');
                     //  Получаем metaBox
@@ -756,10 +757,12 @@ final class GutenbergBlock
                                             <th scope="row" class="p-1" style="width: 35%;">Email:</th>
                                             <td class="p-1 text-600"><?= $mail ?: carbon_get_theme_option(DEFAULT_EMAIL);?></td>
                                         </tr>
+<!--                                        --><?php //if($positions_staffs_top == ''):?>
                                         <tr>
                                             <th scope="row"  class="p-1" style="width: 35%;">Телефон:</th>
-                                            <td class="p-1 text-600"><?= $phone ?: carbon_get_theme_option(DEFAULT_PHONE);?></td>
+                                            <td class="p-1 text-600"><?= $phone ?: carbon_get_theme_option(DEFAULT_PHONE); echo $positions_staffs_top->name ?: 'error get_terms_by_tax' ?></td>
                                         </tr>
+<!--                                        --><?php //endif;?>
                                         <?php if($working_hours):?>
                                         <tr>
                                             <th scope="row"  class="p-1" style="width: 35%;">Время работы (приёма):</th>

@@ -61,6 +61,39 @@ final class Staffs
     }
 
     /**
+     * Получает термин верхнего уровня, для указанного или текущего поста в цикле.
+     *
+     * @param int/object  $post_id   ID или объект поста
+     * @param  string      $taxonomy  Название таксономии
+     *
+     * @return array|false|mixed|null|WP_Error|WP_Term
+     */
+    public static function get_top_term($post_id, $taxonomy)
+    {
+
+        isset( $post_id->ID ) && $post_id = $post_id->ID;
+        ! $post_id            && $post_id = get_the_ID();
+
+        $terms = get_the_terms( $post_id, $taxonomy );
+
+        if( ! $terms || is_wp_error( $terms ) ){
+            return $terms;
+        }
+
+        // только первый
+        $term = array_shift( $terms );
+
+        // найдем ТОП
+        $parent_id = $term->parent;
+        while( $parent_id ){
+            $term = get_term_by( 'id', $parent_id, $term->taxonomy );
+            $parent_id = $term->parent;
+        }
+
+        return $term;
+    }
+
+    /**
      * Получает описание или имя Terms таксонов
      *
      * @param $terms
