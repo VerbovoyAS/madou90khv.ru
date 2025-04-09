@@ -861,6 +861,7 @@ final class GutenbergBlock
                                                 ],
                                             ]),
                             Field::make('text', 'icon_code', __('Иконка')),
+                            Field::make('text', 'alt_name', __('Альтернативное называние')),
                         ]
                     ),
 
@@ -902,7 +903,7 @@ final class GutenbergBlock
                         <div class="d-flex align-items-center rounded-3 shadow mb-2 p-3 bg-body h-100">
                             <i class="<?= $icon; ?> px-4" style="font-size: 1.75rem;"></i>
 <!--                            <h4 class="fw-bold mb-0">--><?php //= $post->post_title;?><!--</h4>-->
-                            <?= $post->post_title;?>
+                            <?= $card['alt_name'] ?: $post->post_title;?>
                         </div>
                     </a>
                 <?php endforeach;?>
