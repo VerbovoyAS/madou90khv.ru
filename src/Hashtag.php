@@ -35,7 +35,7 @@ class Hashtag {
         $getImageList = static::getImageList();
         $randomNum = rand(0, count($getImageList));
 
-        return $getImageList[$randomNum] ?? get_template_directory_uri() . '/assets/img/site/post-default-img/post-default-img.png';
+        return $getImageList[$randomNum] ?? get_template_directory_uri() . '/assets/img/site/post-default-img/post-default-img.jpeg';
     }
 
     /**
@@ -47,7 +47,7 @@ class Hashtag {
     {
         $path = get_template_directory_uri(). '/assets/img/site/post-default-img/';
         return [
-            $path . 'post-default-img.png',
+            $path . 'post-default-img.jpeg',
         ];
     }
 
